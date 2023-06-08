@@ -1,0 +1,61 @@
+{
+  "name": "Hello, PWA",
+  "short_name": "PWA",
+  "description": "start for PWA",
+  "score": ".",
+  "start_url": "./",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "theme_color": "#dd0",
+  "background_color": "tomato",
+  "icons": [
+    {
+      "src": "images/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "first",
+      "short_name": "First name",
+      "description": "First of PWA",
+      "url": "./",
+      "icons": [
+        {
+          "src": "images/icons/android-chrome-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        },
+        {
+          "src": "images/icons/android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "second",
+      "short_name": "Second name",
+      "description": "Second of PWA",
+      "url": "./",
+      "icons": [
+        {
+          "src": "images/icons/android-chrome-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        },
+        {
+          "src": "images/icons/android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}

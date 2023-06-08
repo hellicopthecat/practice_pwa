@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#dd0" />
+    <link rel="shortcut icon" href="images/icons/favicon.ico" />
+    <link rel="manifest" href="manifest.json" />
+    <title>매니페스트 작성</title>
+    <script src="service-worker.js"></script>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: #f3a430;
+        color: white;
+      }
+      .container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello, PWA!</h1>
+      <img src="./images/icons/android-chrome-192x192.png" alt="" />
+      <p>by Javascript</p>
+    </div>
+    <script>
+      if ("serviceWokrer" in navigator) {
+        navigator.serviceWokrer.register("./service-worker.js").then(() => {
+          console.log("service worker is regist");
+        });
+      }
+    </script>
+  </body>
+</html>
